@@ -1,0 +1,59 @@
+body {
+  background-image: url(assets/chill-study.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.clock {
+  color: white;
+  font-size: 6rem;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 3px 3px 5px black;
+  font-family: monospace;
+}
+
+.navbar {
+  text-align: center;
+  color: white;
+  font-size: 4rem;
+}
+.SetAlarmButton {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.DeleteButton {
+  background-color: #f44336;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+p {
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 3px 3px 5px black;
+}
+h1 {
+  color: white;
+  font-size: 4rem;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 3px 3px 5px black;
+}

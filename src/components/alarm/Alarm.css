@@ -1,0 +1,147 @@
+.alarm-container {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  padding: 20px;
+  border-radius: 15px;
+  color: white;
+  max-height: 600px;
+  max-width: 600px;
+  margin: 2rem auto;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+.alarm-container h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.alarm-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.alarm-form input,
+.alarm-form select {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+  background-color: rgba(255, 255, 255, 0.15);
+  color: white;
+  width: 80px;
+  text-align: center;
+  overflow: auto;
+}
+
+.alarm-form button {
+  padding: 10px 16px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 1px solid white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.alarm-form button:hover {
+  background-color: rgba(255, 255, 255, 0.35);
+}
+
+.alarm-empty {
+  font-style: italic;
+  opacity: 0.8;
+}
+
+.alarm-item {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 12px 16px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.alarm-item.inactive {
+  background: rgba(255, 255, 255, 0.03);
+  opacity: 0.5;
+}
+
+.alarm-time {
+  font-weight: bold;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
+.alarm-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.alarm-buttons button {
+  background: transparent;
+  border: none;
+  font-size: 1.2rem;
+  margin-left: 10px;
+  cursor: pointer;
+  color: white;
+  transition: transform 0.2s ease;
+}
+
+.alarm-buttons button:hover {
+  transform: scale(1.2);
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 44px;
+  height: 24px;
+  margin-left: 10px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  background-color: #ccc;
+  border-radius: 34px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: 0.4s;
+}
+
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #9c77ca;
+}
+
+input:checked + .slider::before {
+  transform: translateX(20px);
+}

@@ -1,0 +1,129 @@
+.todo-container {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  color: white;
+  max-width: 600px;
+  margin: 2rem auto;
+  text-align: center;
+  box-sizing: border-box;
+  overflow-y: scroll;
+}
+
+.todo-container h2 {
+  margin-bottom: 1rem;
+}
+.todo-container ::-webkit-input-placeholder {
+  color: white;
+}
+
+.todo-input-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 1rem;
+  justify-content: center;
+}
+.todo-container ul {
+  max-height: 300px;
+  overflow-y: auto;
+}
+.todo-input-group input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+  background-color: rgba(255, 255, 255, 0.15);
+  color: white;
+}
+
+.todo-input-group button {
+  padding: 10px 14px;
+  font-size: 1rem;
+  background-color: rgba(255, 255, 255, 0.25);
+  border: 1px solid white;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.todo-input-group button:hover {
+  background-color: rgba(255, 255, 255, 0.35);
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow: auto;
+}
+.task-item {
+  background-color: rgba(255, 255, 255, 0.08);
+  margin-bottom: 12px;
+  padding: 12px 16px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.task-item.completed {
+  opacity: 0.6;
+  text-decoration: line-through;
+}
+
+.task-text {
+  flex: 1;
+  text-align: left;
+}
+
+.task-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.task-actions button {
+  background: transparent;
+  border: none;
+  font-size: 1.1rem;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.task-actions button:hover {
+  transform: scale(1.2);
+}
+
+.checkbox-label {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+
+.checkbox-label input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}
+
+.checkbox-label input:checked + .checkmark {
+  background-color: #6933c6;
+}
